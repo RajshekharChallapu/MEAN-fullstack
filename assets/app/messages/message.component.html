@@ -1,8 +1,7 @@
-<input type="text" [(ngModel)]="message.content">
-<article class="panel panel-default">
+<!-- <input type="text" [(ngModel)]="message.content"> -->
+<article class="panel panel-default" [ngStyle]= "{backgroundColor: 'color'}" (mouseenter)="color ='green'">
     <div class="panel-boday">
         {{message.content}}
-
     </div>
     <footer class="panel-footer">
         <div class="author">
@@ -11,7 +10,6 @@
         <div class="config">
             <a href="#" (click)="onEdit()">Edit</a>
             <a href="#">Delete</a>
-
         </div>
     </footer>
 </article>
