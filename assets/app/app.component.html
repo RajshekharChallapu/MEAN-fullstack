@@ -1,11 +1,13 @@
 <div class="conatiner">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <app-message 
-             [message]="message"
-            (editClicked)="message.content = $event"
-            *ngFor="let message of messages"></app-message>
+        <app-message-input>
+            
+        </app-message-input>
+    </div>
+    <hr>
+    <div class="row">
+        <app-message-list>
 
-        </div>
+        </app-message-list>
     </div>
 </div>
