@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 
 import { AppComponent } from "./app.component";
 import { MessageComponent } from "./messages/message.component";
@@ -13,6 +14,7 @@ import { routing } from "./app.routing";
 import { LogoutComponent } from "./auth/logout.component";
 import { SignupComponent } from "./auth/signup.component";
 import { SigninComponent } from "./auth/signin.component";
+
 
 @NgModule({
 /* the view classes that belong to this module.Angular has three kinds of view classes : components,
@@ -31,7 +33,12 @@ and pipes. */
         SigninComponent
     ],
 /* other modules whose exported classes are needed by component templates declared in this module. */
-    imports: [BrowserModule, FormsModule,routing, ReactiveFormsModule],
+    imports: [
+        BrowserModule,
+         FormsModule,routing,
+          ReactiveFormsModule,
+          HttpModule
+        ],
     /* bootstrap(main application view) is root component..only root module set this bootstrap property */
     bootstrap: [AppComponent]
 })
