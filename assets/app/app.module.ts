@@ -35,9 +35,9 @@ and pipes. */
 /* other modules whose exported classes are needed by component templates declared in this module. */
     imports: [
         BrowserModule,
-         FormsModule,routing,
-          ReactiveFormsModule,
-          HttpModule
+        FormsModule,routing,
+        ReactiveFormsModule,
+        HttpModule
         ],
     /* bootstrap(main application view) is root component..only root module set this bootstrap property */
     bootstrap: [AppComponent]
