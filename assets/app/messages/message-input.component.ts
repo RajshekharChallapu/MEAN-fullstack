@@ -23,12 +23,11 @@ export class MessageInputComponent implements OnInit{
             this.message = null;
         }  else{
             //create
-const message = new Message(form.value.content, 'raja');
+const message = new Message(form.value.content, 'Raja');
 this
     .messageService
     .addMessage(message)
-    .subscribe(data => console.log(data), error => console.error(error)
-);
+    .subscribe(data => console.log(data), error => console.error(error));
         }
         form.resetForm();
     }
